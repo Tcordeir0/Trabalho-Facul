@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Matemática</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculadora.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="intro">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="number">0</div>
+        </div>
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendNumber('/')">/</button>
+            <button onclick="appendNumber('*')">*</button>
+            <button onclick="deleteNumber()">DEL</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendNumber('-')">-</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendNumber('+')">+</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendNumber('0')" class="zero">0</button>
+            <button onclick="appendNumber('.')">.</button>
+        </div>
+        <div class="advanced-options">
+            <label><input type="checkbox" id="checkMDC"> MDC</label>
+            <label><input type="checkbox" id="checkMMC"> MMC</label>
+            <label><input type="checkbox" id="checkDivisivel"> Divisível</label>
+            <label><input type="checkbox" id="checkPrimo"> Primo</label>
+            <label><input type="checkbox" id="checkPar"> Par</label>
+            <label><input type="checkbox" id="checkFatoracao"> Fatoração em primos</label>
+            <label><input type="checkbox" id="checkMultiplo"> Múltiplo</label>
+        </div>
+        <button class="advanced-calculate" onclick="calcular()">Calcular Avançado</button>
+        <div id="resultados" class="results"></div>
+    </div>
+</body>
+</html>
