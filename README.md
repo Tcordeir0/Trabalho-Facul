@@ -43,5 +43,5 @@ Este projeto de calculadora não apenas fornece as funções matemáticas básic
 
 Este documento serve como um guia para entender a estrutura e funcionalidade do código da calculadora. É importante para a manutenção do código e para futuras melhorias ou personalizações da aplicação.
 
-
-BY: Kaue Augustus, Murilo ... e Talys Matheus
+**
+BY: Talys Matheus Cordeiro Silva - Kaue Augustus Pio Silva - Wesley Rodrigues Oliveira - Murillo Silva Rosa**
