@@ -21,9 +21,11 @@
             <div class="number">9</div>
             <div class="number">0</div>
         </div>
+        
         <div class="display">
             <input type="text" id="display" disabled>
         </div>
+        
         <div class="buttons">
             <button onclick="clearDisplay()">C</button>
             <button onclick="appendNumber('/')">/</button>
@@ -44,6 +46,7 @@
             <button onclick="appendNumber('0')" class="zero">0</button>
             <button onclick="appendNumber('.')">.</button>
         </div>
+        
         <div class="advanced-options">
             <label><input type="checkbox" id="checkMDC"> MDC</label>
             <label><input type="checkbox" id="checkMMC"> MMC</label>
@@ -53,7 +56,9 @@
             <label><input type="checkbox" id="checkFatoracao"> Fatoração em primos</label>
             <label><input type="checkbox" id="checkMultiplo"> Múltiplo</label>
         </div>
+        
         <button class="advanced-calculate" onclick="calcular()">Calcular Avançado</button>
+        
         <div id="resultados" class="results"></div>
     </div>
 </body>
