@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (checkPrimo) {
             resultados.innerHTML += `<p>Número 1 é ${ehPrimo(num1) ? 'Primo' : 'Composto'}</p>`;
-            if (!isNaN(num2)) {
-                resultados.innerHTML += `<p>Número 2 é ${ehPrimo(num2) ? 'Primo' : 'Composto'}</p>`;
-            }
+            
         }
 
         if (checkFatoracao) {
