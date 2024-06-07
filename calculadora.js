@@ -49,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (checkPar) {
             resultados.innerHTML += `<p>Número 1 é ${num1 % 2 === 0 ? 'Par' : 'Ímpar'}</p>`;
-            if (!isNaN(num2)) {
-                resultados.innerHTML += `<p>Número 2 é ${num2 % 2 === 0 ? 'Par' : 'Ímpar'}</p>`;
-            }
         }
 
         if (checkPrimo) {
