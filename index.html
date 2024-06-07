@@ -22,8 +22,13 @@
             <div class="number">0</div>
         </div>
         
-        <div class="display">
-            <input type="text" id="display" disabled>
+        <div class="displays">
+            <div class="display">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="display">
+                <input type="text" id="inputDisplay" disabled>
+            </div>
         </div>
         
         <div class="buttons">
@@ -63,3 +68,32 @@
     </div>
 </body>
 </html>
+
+<script>
+    function appendNumber(number) {
+        document.getElementById('inputDisplay').value += number;
+    }
+
+    function clearDisplay() {
+        document.getElementById('display').value = '';
+        document.getElementById('inputDisplay').value = '';
+    }
+
+    function deleteNumber() {
+        let inputDisplay = document.getElementById('inputDisplay');
+        inputDisplay.value = inputDisplay.value.slice(0, -1);
+    }
+
+    function calculate() {
+        let inputDisplay = document.getElementById('inputDisplay');
+        try {
+            document.getElementById('display').value = eval(inputDisplay.value);
+        } catch {
+            document.getElementById('display').value = 'Erro';
+        }
+    }
+
+    function calcular() {
+        // Implement advanced calculations here
+    }
+</script>
